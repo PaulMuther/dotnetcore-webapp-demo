@@ -34,6 +34,7 @@ namespace MvcMovie.Controllers
             ViewData["LocalIp"] = dynamicObj?.LocalIp;
             ViewData["HeadersCommaDelimited"] = dynamicObj?.HeadersCommaDelimited;
 
+            Console.WriteLine($"Here we are:  {dynamicObj?.PrivateIp}");
             return View();
         }
 
